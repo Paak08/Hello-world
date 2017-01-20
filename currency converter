@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    cout << "This is a currency converter for converting to dollars(US)" << endl;
+
+    const double one_dollar_cedi=3.50;
+    const double one_pound_dollar=5.80;
+    double amount=1.0;
+    string currecny_type;
+    cout << "Please enter an amount to be converted" << endl;
+    cin >> amount >> currecny_type;
+    if (currecny_type=="ghc")
+        cout << amount << "in dollars is:" << amount * one_dollar_cedi << endl;
+    else if (currecny_type=="pounds")
+    cout << amount << "in dollars is:" << amount * one_pound_dollar<< endl;
+    else
+        cout <<"Features for other currencies not yet enabled" << endl;
+    return 0;
+}
